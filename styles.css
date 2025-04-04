@@ -229,6 +229,9 @@ margin-right: 10px;
 		text-align: center;
 		/*padding: 2% 8% 2% 8%;*/
 		font-family: anton;
+		display: block;
+		width: 100%;
+		height: 100%;
 	}
 	.ad{
 		color: #FFFFFF;
