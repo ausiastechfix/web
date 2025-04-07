@@ -4,7 +4,6 @@
 <script src="js.js"></script>
 <script src="dark.js"></script>
 <script src="light.js"></script>
-<script src="clear.js"></script>
 <script src="remember.js"></script>
 
 
@@ -33,7 +32,7 @@
 		<meta name="description" content="Servicio gratuito de reparación, limpieza y más, exclusivo para miembros del CIPFP Ausiàs March. Ven a las aulas s07 y s08 y te reparamos tu equipo gratis!! Te informaremos de los gastos del servicio para que veas cuanto te has ahorrado!">
 		<meta name='keywords' content='ausias, ausiasmarch, ausiàs, fpausiasmarch, ausiàsmarch, techfix, soporte, pc, ordenador, servicio reparación, gratuito, CIPFP Ausiàs March'>
 		<meta name="author" content="Difusión 1º SMR">  		
-    		
+    	<meta property="og:image" content="Banner.png">
 
 	<!-- Tab Name and favicon -->
 	<title>Ausiàs TechFix</title>
@@ -60,8 +59,7 @@
 	<div onclick="location.href='index.html';" style="cursor:pointer;" class=menuitem><br><img style="width: 90% ; height: 90%;" src="hometext.png"></a></div>
 	<div onclick="location.href='info.html';" style="cursor:pointer;" class=menuitem><br><img style="width: 90% ; height: 90%;" src="questtext.png"></a></div>
 	<div onclick="location.href='form.html';" style="cursor:pointer;" class=menuitem><br><img style="width: 60% ; height: 60%;" src="conttext.png"></a></div>
-	<div><button style="display: inline;" onclick="darktoggle(1)">Modo Oscuro</button>
-	<button style="display: inline;" id="themebutton" onclick="loadScript('light.js')">Modo Claro</button></div>
+	<div><button id="modeSW" class="lightB" onclick=""><img id="SWimg" class="Bimg" src="lightsw.png"><!--<h5>Mode SW</h5>--></button></div>
 	</div>
 </ul>
 

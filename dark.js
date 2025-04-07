@@ -1,16 +1,17 @@
-function loadScript(url)
-{    
-    var head = document.getElementsByTagName('head')[0];
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = url;
-    head.appendChild(script);
-    document.getElementById("themebutton").onclick = function(){
-    lighttoggle()
-    }
-}
+//function loadScript(url)
+//{    
+//    var head = document.getElementsByTagName('head')[0];
+//    var script = document.createElement('script');
+//    script.type = 'text/javascript';
+//    script.src = url;
+//    head.appendChild(script);
+//    document.getElementById("themebutton").onclick = function(){
+//    lighttoggle()
+//    }
+//}
 let mode
 function darktoggle(mode){
+	console.log("--darktoggle start--")
 	togglemode = mode;
 	//console.log("0 es claro, 1 es oscuro")
 	var dark = 0
@@ -29,7 +30,7 @@ function darktoggle(mode){
 
 		dark = localStorage.getItem('cmode')
 
-	console.log(dark, dark)
+	console.log(dark)
 	var shiftcolor = document.getElementById('toggleable')  
 	var shiftcolor2 = document.getElementById('toggleable2')
 	var shiftcolor3 = document.getElementById('toggleable3') 
@@ -39,29 +40,41 @@ function darktoggle(mode){
 	var shiftcolor7 = document.getElementById('toggleable7')
 	var shiftcolor8 = document.getElementById('toggleable8')
 	var shiftcolor9 = document.getElementById('toggleable9')
-	var shiftcolor10 = document.getElementById('toggleable10')
-	var shiftcolor11 = document.getElementById('toggleable11')
+	var shiftcolor10 = document.getElementById('SWimg')
+	var shiftcolor11 = document.getElementById('modeSW')
 	var shiftcolor12 = document.getElementById('toggleable12')
 
     shiftcolor.classList = "darkmode"
     shiftcolor.style = ""
-    console.log("Pheaderbackgr set to dark")
+   		console.log("Pheaderbackgr set to dark")
 
     shiftcolor2.classList = "darkmode2"
+    	console.log("Pheader Prop. set to dark")
 
     shiftcolor3.classList = "darkmode3"
+    	console.log("pheaderbackgr set to dark")
 
     shiftcolor4.src = "ANTONATF.png"
     shiftcolor4.classList = "darkmode4"
+    	console.log("pheaderlogo set to dark")
 
-  
     shiftcolor5.classList = "darkmode5"
+    	console.log("menuholder set to dark")
 
 	shiftcolor6.src = "menuD.png"
+		console.log("menulogo set to dark")
 
   	shiftcolor7.classList = "darkmode7"
+  		console.log("paragraphs set to dark")
+
+  	shiftcolor10.src = "darksw.png"
+  		console.log("mode switch set to dark")
 
   	shiftcolor12.classList = "buttonD"
+  		console.log("All menu items set to dark")
+
+  	shiftcolor11.classList = "darkB"
+  		console.log("mode switch backgr set to dark")
   	//shiftcolor8.src("homettextL2.png")
   	//shiftcolor8.src("homettextD2.png")
   	//document.getElementById("toggleable8").src="hometextD2.png";

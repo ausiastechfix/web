@@ -59,10 +59,25 @@
 		font-family: anton;
 	}
 	
+	.darkB{
+		background-color: #363636;
+
+	}
+
+	
 	
 
 	/* LIGHT MODE  (DEFAULT!!) 
 	!! !! !! !! !! !! !! !! !! */
+
+	.lightB{
+		background-color: #c8c8c8;
+
+	}
+
+	
+	
+
 	.lightmode{
 		color: #000000;
 	}
@@ -134,6 +149,10 @@
 }
 /* SIZES AND FITTINGS (WORKS FOR BOTH LIGHT AND DARK MODE) */
 
+.Bimg{
+		max-width: 40%;
+		max-height: 40%;
+	}
 
 }
 .redes{
@@ -162,13 +181,32 @@ ul{
 /* BUTTON */
 
 
-button{
-	font-family: Poppins ;
-	background-color: #525252;
-	color:white ;
-	padding: 1% 0% 1% 0%;
-	height: 20%;
-	width: 48%;
+								button{
+									
+									font-family: Poppins ;
+									
+									color:white ;
+									font-size: 75%;
+									/*padding: 1%;
+									max-height: 20%;
+									height: 10%;
+									width: 48%;*/
+									max-height: 40px;
+									min-width: 100%;
+									max-width: 200%;
+									
+									width: fit-content;
+	
+
+	
+	/*max-width: 100%;  
+	overflow: hidden; 
+	white-space: nowrap; 
+	
+	display: inline-flex; 
+	justify-content: center; 
+	align-items: center; 
+	min-width: 0;   */
 }
 
 

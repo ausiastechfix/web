@@ -1,5 +1,5 @@
 function lighttoggle() {
-	console.log("0 es claro, 1 es oscuro ESTO ES LIGHT")
+	console.log("--lighttoggle start--")
 	var dark = 1
 	//console.log(dark)
 	if(dark == 1) {
@@ -22,8 +22,8 @@ function lighttoggle() {
 	var shiftcolor7 = document.getElementById('toggleable7')
 	var shiftcolor8 = document.getElementById('toggleable8')
 	var shiftcolor9 = document.getElementById('toggleable9')
-	var shiftcolor10 = document.getElementById('toggleable10')
-	var shiftcolor11 = document.getElementById('toggleable11')
+	var shiftcolor10 = document.getElementById('SWimg')
+	var shiftcolor11 = document.getElementById('modeSW')
 	var shiftcolor12 = document.getElementById('toggleable12')
 
    shiftcolor.style = "background-color: #c5dcf2";
@@ -57,9 +57,14 @@ function lighttoggle() {
 	//shiftcolor9.src = "questtextL2.png"
 	//shiftcolor10.src = "conttextL2.png"
   	
-		console.log("All menu items set to light")
+	
+  	shiftcolor10.src = "lightsw.png"
+  		console.log("mode switch set to light")
 
   	shiftcolor12.classList = "buttonL"
+
+  	shiftcolor11.classList = "lightB"
+  	console.log("mode switch backgr set to light")
 
 	//localStorage.setItem.('0');
 	
