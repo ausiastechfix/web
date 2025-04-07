@@ -66,6 +66,38 @@
 
 </div>
 </div>
+
+<script type="text/javascript">
+	
+	// Button to switch modes
+	const toggleButton = document.getElementById('modeSW')
+
+		let isdark = true;
+
+		function DarkCall() {
+			console.log("=--=dark.js call attempt=--=")
+    	darktoggle(1)
+    	console.log("=--=dark.js call succeeded=--=")
+    }
+
+    function LightCall() {
+			console.log("=--=light.js call attempt=--=")
+    	lighttoggle()
+    	console.log("=--=light.js call succeeded=--=")
+    }
+
+    toggleButton.addEventListener('click', () => {
+    	if (isdark) {
+    		DarkCall();
+    	} else {
+    		LightCall();
+    	}
+
+    	isdark = !isdark;
+    });
+    
+</script>
+
 <body onload="remember(12)" style="background-color: #c5dcf2;" id="toggleable" >
 	<div>
 		<p id="toggleable7" style="top: 17%; left: 3%; font-family: anton; font-size: 30px;">Cómo contactar para recibir servicio</p>
