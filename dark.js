@@ -67,13 +67,30 @@ function darktoggle(mode){
   	shiftcolor7.classList = "darkmode7"
   		console.log("paragraphs set to dark")
 
-  	shiftcolor10.src = "darksw.png"
+  	shiftcolor10.src = "todark.gif"
   		console.log("mode switch set to dark")
 
   	shiftcolor12.classList = "buttonD"
   		console.log("All menu items set to dark")
 
-  	shiftcolor11.classList = "darkB"
+
+  		function sleep(ms) {
+ 	 return new Promise(resolve => setTimeout(resolve, ms));
+	}
+
+	
+	sleep(0).then(() => { shiftcolor11.classList = "f1" ; });
+	sleep(40).then(() => { shiftcolor11.classList = "f2" ; });
+  	sleep(80).then(() => { shiftcolor11.classList = "f3" ; });
+  	sleep(120).then(() => { shiftcolor11.classList = "f4" ; });
+  	sleep(160).then(() => { shiftcolor11.classList = "f5" ; });
+  	sleep(200).then(() => { shiftcolor11.classList = "f6" ; });
+  	sleep(240).then(() => { shiftcolor11.classList = "f7" ; });
+  	sleep(280).then(() => { shiftcolor11.classList = "f8" ; });
+  	sleep(320).then(() => { shiftcolor11.classList = "f9" ; });
+  	sleep(360).then(() => { shiftcolor11.classList = "f10" ; });
+
+  
   		console.log("mode switch backgr set to dark")
   	//shiftcolor8.src("homettextL2.png")
   	//shiftcolor8.src("homettextD2.png")
